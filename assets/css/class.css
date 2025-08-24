@@ -180,7 +180,6 @@ ul li {
 }
 figcaption {
   font-size: 0.75em;
-  text-align: center;
   margin-bottom: 1.5em;
   margin-top: 0.5em;
 }
@@ -400,6 +399,10 @@ nav#class-menu a.home .weeks {
   padding-top: 0;
   font-weight: bold;
   font-size: 1em;
+}
+
+#columns figure {
+  margin-bottom: 1.75em;
 }
 
 h1.normal {
