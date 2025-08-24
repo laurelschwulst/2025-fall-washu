@@ -511,4 +511,16 @@ a.hidden:hover {
   #center {
     opacity: 0.15;
   }
+  nav#class-menu,
+  nav#bottom-right {
+    position: static;
+  }
+  nav#class-menu {
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  #center {
+    z-index: -1;
+    pointer-events: none;
+  }
 }
