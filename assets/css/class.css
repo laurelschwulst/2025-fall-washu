@@ -165,11 +165,6 @@ ul li {
   margin: 0;
   padding-left: 1em;
 }
-footer {
-  padding: 2.5em 0 0;
-  font-size: 0.75em;
-  line-height: 1.25;
-}
 .small-text {
   font-size: 0.75em;
   line-height: 1.25;
@@ -347,6 +342,12 @@ nav#class-menu a.week-menu {
   text-decoration: none;
 }
 
+nav#class-menu li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
 nav#class-menu a.week-menu:hover {
   text-decoration: underline;
 }
@@ -399,6 +400,11 @@ nav#class-menu a.home .weeks {
   padding-top: 0;
   font-weight: bold;
   font-size: 1em;
+}
+
+h1.normal {
+  font-weight: normal !important;
+  margin: 0;
 }
 
 .dont-break {

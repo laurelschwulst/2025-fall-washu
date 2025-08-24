@@ -1,0 +1,5 @@
+to do:
+
+- add acknowledgements globally
+- add icons next to readings etc.
+- make readings pages
