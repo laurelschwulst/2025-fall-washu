@@ -524,6 +524,7 @@ a.hidden:hover {
   }
   nav#bottom-right {
     padding-left: 20px;
+    padding-bottom: 20px;
   }
   #center {
     z-index: -1;
