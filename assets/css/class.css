@@ -103,8 +103,8 @@ hr {
 hr.visible {
   border-top: 1px solid rgba(0, 0, 0, 1);
   height: 0;
-  margin-top: 1.75em;
-  margin-bottom: 1.5em;
+  padding-top: 1.75em;
+  /* margin-bottom: 1.5em; */
 }
 /* hr:after {
     position: absolute;
@@ -401,6 +401,14 @@ nav#class-menu a.home .weeks {
   margin-top: 2.5em;
 }
 
+#columns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 44px;
+  padding: 22px 32px;
+  margin-top: 2.5em;
+}
+
 #columns a {
   text-decoration: none;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
@@ -422,7 +430,7 @@ nav#class-menu a.home .weeks {
   font-weight: normal;
   background: rgba(0, 0, 0, 0.1);
   display: inline-block;
-  margin-top: 1.15em;
+  margin-top: 1.25em;
 }
 
 .highlight {
@@ -439,16 +447,38 @@ nav#class-menu a.home .weeks {
   max-height: 225px;
 }
 
+img.thumb {
+  width: 125px;
+  float: left;
+  margin-right: 1em;
+  filter: grayscale(100%);
+  opacity: 0.75;
+}
+
+p.reading {
+  margin-top: 0;
+}
+
+.clearer {
+  clear: both;
+}
+
 h1.normal {
   font-weight: normal !important;
-  margin: 0;
+  margin: 0 !important;
 }
 
 .dont-break {
   break-inside: avoid;
   /* padding-top: 1em; */
-  margin-top: 1em;
+  padding-top: 1em;
   /* border-top: 1px solid rgba(0, 0, 0, 0.2); */
+}
+
+.dont-break.special {
+  padding-top: 0;
+  margin-top: 2.5em;
+  margin-bottom: 2.5em;
 }
 
 /* nav#class-menu details .inside {
@@ -541,6 +571,12 @@ a.hidden:hover {
   }
 }
 
+@media (max-width: 1000px) {
+  #columns-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
 @media (max-width: 850px) {
   #center {
     opacity: 0.15;
@@ -564,5 +600,11 @@ a.hidden:hover {
   #columns {
     margin-top: 0;
     padding-top: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  #columns-grid {
+    grid-template-columns: 1fr;
   }
 }
