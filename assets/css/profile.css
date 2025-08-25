@@ -77,3 +77,15 @@ main {
   font-size: 12px;
   padding-top: 0.85em;
 }
+
+@media (max-width: 1200px) {
+  html,
+  body {
+    height: auto;
+  }
+  main {
+    height: auto;
+    display: block;
+    margin-top: 5em;
+  }
+}
