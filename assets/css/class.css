@@ -100,6 +100,12 @@ hr {
   height: 2em;
   /* margin: 1.5em 0 2.5em; */
 }
+hr.visible {
+  border-top: 1px solid rgba(0, 0, 0, 1);
+  height: 0;
+  margin-top: 1.75em;
+  margin-bottom: 1.5em;
+}
 /* hr:after {
     position: absolute;
     content: "* * *";
@@ -138,7 +144,7 @@ a#dove:hover {
 blockquote {
   padding: 0;
   margin: 0;
-  margin-bottom: 1em;
+  margin: 1.5em 0;
   font-style: italic;
   /* border-left: 1px solid rgba(0, 0, 0, 0.2);
   padding-left: 1.5em; */
@@ -395,6 +401,15 @@ nav#class-menu a.home .weeks {
   margin-top: 2.5em;
 }
 
+#columns a {
+  text-decoration: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+#columns a:hover {
+  border-bottom-color: rgba(0, 0, 0, 1);
+}
+
 #columns h1,
 #columns h2 {
   margin-top: 1em;
@@ -403,9 +418,25 @@ nav#class-menu a.home .weeks {
   font-size: 1em;
 }
 
+#columns h2 {
+  font-weight: normal;
+  background: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+  margin-top: 1.15em;
+}
+
+.highlight {
+  background: rgba(0, 0, 0, 0.1);
+  display: inline-block;
+}
+
 #columns figure {
-  margin-bottom: 1.75em;
+  margin-bottom: 1em;
   margin-top: 0.5em;
+}
+
+#columns .item img {
+  max-height: 225px;
 }
 
 h1.normal {
