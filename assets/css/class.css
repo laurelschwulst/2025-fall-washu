@@ -463,9 +463,20 @@ p.reading {
   clear: both;
 }
 
-h1.normal {
+h1.normal,
+h2.normal {
   font-weight: normal !important;
   margin: 0 !important;
+  font-size: 1em;
+}
+
+.project-page h1.normal,
+.project-page h2.normal {
+  margin-bottom: 1em !important;
+}
+
+.project-page ol {
+  margin-top: 1em;
 }
 
 .dont-break {
